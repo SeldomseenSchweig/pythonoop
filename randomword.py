@@ -7,8 +7,3 @@ class RandomWord(WordFinder):
         super().__init__(file_path)
         self.fixed_text = []
     
-    def random(self):
-        for line in self.text:
-                if not line[0] == " " or not line[0] == '#':
-                    self.fixed_text.append(line)
-        return choice(self.fixed_text)
